@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class calc {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int ans = 0;
+
+        System.out.print("Enter Num1: ");
+        int num1 = scan.nextInt();
+        System.out.print("Enter Num2: ");
+        int num2 = scan.nextInt();
+
+        // Addition Logic (from Feature-Addition branch)
+        ans = num1 + num2;
+        System.out.println("Sum: " + ans);
+
+        // Multiplication Logic (from Multiplication branch)
+        ans = num1 * num2;
+        System.out.println("Product: " + ans);
+
+        // Division Logic (from Function-Division branch)
+        if (num2 != 0) {
+            ans = num1 / num2;
+            System.out.println("Quotient: " + ans);
+        } else {
+            System.out.println("Error: Division by zero");
+        }
+    }
+}
